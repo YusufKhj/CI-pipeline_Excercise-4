@@ -39,7 +39,7 @@ describe('GET /ping', () => {
       url: '/ping',
     });
 
-    expect(response.statusCode).toBe(404);
+    expect(response.statusCode).toBe(200);
     expect(response.json()).toEqual({ count: 42 });
   });
 
